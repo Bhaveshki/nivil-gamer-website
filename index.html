@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIVL GAMER | Official Website</title>
+
+<style>
+/* Smooth scrolling effect */
+html { scroll-behavior: smooth; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body { background: #f4f6f9; color: #333; }
+
+/* Fixed Navbar for Better UX */
+header {
+    background: #111;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap; /* Mobile par overlap nahi hoga */
+}
+
+header h1 { font-size: 20px; letter-spacing: 1px; }
+
+nav { margin-top: 5px; }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover { color: #00bcd4; }
+
+/* Hero Section Improvement */
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h2 { font-size: clamp(30px, 5vw, 50px); margin-bottom: 15px; }
+
+.hero p { font-size: 18px; margin-bottom: 30px; opacity: 0.9; }
+
+.hero-btn {
+    padding: 15px 35px;
+    border: none;
+    background: #00bcd4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.hero-btn:hover { background: #fff; color: #141e30; transform: translateY(-3px); }
+
+/* Services Card Hover Effects */
+.services { padding: 80px 20px; text-align: center; }
+.service-box { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; }
+
+.card {
+    background: white;
+    padding: 40px 25px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+
+/* Mobile View Adjustments */
+@media (max-width: 600px) {
+    header { justify-content: center; text-align: center; }
+    nav { width: 100%; margin-top: 15px; }
+    nav a { margin: 0 10px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>NIVL GAMER</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Welcome to My Professional Website</h2>
+        <p>I create websites, apps & trading tools.</p>
+        <a href="mailto:your-email@gmail.com" class="hero-btn">Contact Me</a>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <h2>My Services</h2>
+    <div class="service-box">
+        <div class="card">
+            <h3>🌐 Web Dev</h3>
+            <p>Modern & responsive websites for your business.</p>
+        </div>
+        <div class="card">
+            <h3>📱 App Dev</h3>
+            <p>High performance Android & Web applications.</p>
+        </div>
+        <div class="card">
+            <h3>📈 Trading Tools</h3>
+            <p>Custom PineScript & automated trading indicators.</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>© 2026 NIVL GAMER | All Rights Reserved</p>
+    <p style="font-size: 12px; margin-top: 10px; color: #777;">Built with ❤️ for Gaming & Trading</p>
+</footer>
+
+</body>
+</html>
